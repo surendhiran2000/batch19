@@ -4,9 +4,12 @@ import './loginform';
 import LoginForm from './loginform';
 function App() {
   return (
+
     <div className="App">
-     <LoginForm/>
+      <LoginForm />
+
     </div>
+
   );
 }
 

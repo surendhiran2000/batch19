@@ -17,14 +17,15 @@ function LoginForm() {
     console.log(customerDetails)
   }
   return (
-    <div>
+    <div className='A'>
       <div>
-        book your tickets
+        <h3>book your tickets</h3>
       </div>
+
       <br />
       <br />
       <div>
-        <label>
+        <label style={{ color: 'white' }}>
           Customer Name
           <div>
             <input type="text" id="customerName" value={customerDetails.customerName} onChange={handleChange} name="customerName" />
@@ -37,7 +38,7 @@ function LoginForm() {
           Customer Number
           <div>
 
-            <input type="text" id="customerNumber" value={customerDetails.customerNumber} onChange={handleChange} name="customerNumber" />
+            <input type="Number" id="customerNumber" value={customerDetails.customerNumber} onChange={handleChange} name="customerNumber" />
           </div>
         </label>
       </div>
@@ -50,7 +51,18 @@ function LoginForm() {
           </div>
         </label>
       </div>
-      <button onClick={handleSubmit}>submit</button>
+      <button onClick={handleSubmit} style={{ color: 'red' }}>submit</button>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
     </div >
   )
 }
