@@ -1,9 +1,6 @@
 .App {
   text-align: center;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGUUlB5WtnhAtNlHz8_3f0K1yDDKs-utp4fw&s');
-  background-repeat:no-repeat;
-  background-size: cover;
-
+  background-color: rgb(122, 181, 185);
 }
 .App-logo {
   height: 40vmin;
@@ -65,4 +62,7 @@
   to {
     transform: rotate(360deg);
   }
+}
+.main-content {
+  margin-left: 250px;
 }
