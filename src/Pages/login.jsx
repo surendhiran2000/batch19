@@ -37,10 +37,11 @@ function Login() {
       if (redirect === "Yes") {
         navigate("/home");
       }
-    }, 5000);
+    }, 3000);
   }
   return (
     <div>
+      <nav>
       <br />
       <div>
         <h3>ADMIN LOGIN</h3>
@@ -76,12 +77,8 @@ function Login() {
         submit
       </Button>
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+    
+  
       <br />
       <br />
       <br />
@@ -100,6 +97,8 @@ function Login() {
           Please Enter all the fields to proceed
         </Alert>
       )}
+      
+      </nav>
     </div>
   );
 }

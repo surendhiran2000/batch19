@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgb(122, 181, 185);
+background-color: aquamarine;
 }
 .App-logo {
   height: 40vmin;
@@ -64,5 +64,12 @@
   }
 }
 .main-content {
-  margin-left: 250px;
+  margin-left: 170px;
+}
+img{
+  padding: 10px;
+}
+up-cm{
+  margin-left: 100px;
+  padding-left: 50px;
 }

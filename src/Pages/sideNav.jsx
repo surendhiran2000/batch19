@@ -22,6 +22,7 @@ export default function SideNavigation() {
     "/bookTickets",
     "/viewTickets",
     "/cancelTickets",
+    
   ];
   const navigate = useNavigate();
   const [sideNav, setSideNav] = useState(false);
@@ -42,7 +43,7 @@ export default function SideNavigation() {
     <div>
       <Toolbar />
       <Divider />
-      <List>
+      <List style={{backgroundColor:'pink'}}>
         {navigation.map((text, index) => (
           <ListItem key={text.name} disablePadding>
             <ListItemButton component={Link} to={text.path}>
@@ -59,7 +60,7 @@ export default function SideNavigation() {
         <Drawer
           variant="permanent"
           sx={{
-            "& .MuiDrawer-paper": { boxSizing: "border-box", width: "250px" },
+            "& .MuiDrawer-paper": { boxSizing: "border-box", width: "180px" },
           }}
           open
         >

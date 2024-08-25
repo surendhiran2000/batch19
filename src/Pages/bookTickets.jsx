@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import { TextField, Alert, Button } from "@mui/material";
+import { Bolt } from '@mui/icons-material';
 function BookTickets() {
   const [customerDetails, setCustomerDetails] = useState({
     customerName: '',
@@ -18,47 +19,41 @@ function BookTickets() {
   }
   return (
     <div className='main-content'>
-      <div>
-        <h3>book your tickets</h3>
-      </div>
+     
 
       <br />
       <br />
+      <div class='textfield-button' style={{padding:'10px'}}>
+      <h3 style={{color:'red'}}>Book Your tTckets</h3>
       <div>
-        <label style={{ color: 'white' }}>
-          Customer Name
-          <div>
-            <input type="text" id="customerName" value={customerDetails.customerName} onChange={handleChange} name="customerName" />
-          </div>
-        </label>
-
+        <TextField style={{padding:'10px'}}
+          type="text"
+          id="customerName"
+          label="customerName"
+          value={customerDetails.customerName}
+          onChange={handleChange}
+          name="customerName" />
       </div>
       <div>
-        <label>
-          Customer Number
-          <div>
-
-            <input type="Number" id="customerNumber" value={customerDetails.customerNumber} onChange={handleChange} name="customerNumber" />
-          </div>
-        </label>
-      </div>
+          <TextField style={{padding:'10px'}}
+            type="text"
+            id="customerNumber"
+            label=" customerNumber"
+            value={customerDetails.customerNumber}
+            onChange={handleChange}
+            name="customerNumber" />
+        </div>
       <div>
-        <label>
-          Number Of Tickets
-          <div>
-
-            <input type="number" id="numerOfTickets" value={customerDetails.numerOfTickets} onChange={handleChange} name="numerOfTickets" />
-          </div>
-        </label>
+        <TextField style={{padding:'10px'}}
+          type="text"
+          id="numerOfTickets"
+          label="Number Of Tickets"
+          value={customerDetails.numerOfTickets}
+          onChange={handleChange}
+          name="numerOfTickets" />
       </div>
-      <button onClick={handleSubmit} style={{ color: 'red' }}>submit</button>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      </div>
+      <Button variant="contained" size="large" onClick={handleSubmit}>submit</Button>
       <br />
       <br />
       <br />

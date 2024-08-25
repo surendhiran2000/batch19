@@ -7,6 +7,8 @@ import Home from "./Pages/home.jsx";
 import SideNavigation from "./Pages/sideNav.jsx";
 import ViewTickets from "./Pages/viewTickets.jsx";
 import CancelTickets from "./Pages/cancelTickets.jsx";
+import About from "./Pages/About.jsx";
+import ContactUs from "./Pages/About.jsx";
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,9 @@ function App() {
           <Route path="/bookTickets" Component={BookTickets} />
           <Route path="/viewTickets" Component={ViewTickets} />
           <Route path="/cancelTickets" Component={CancelTickets} />
+          <Route path="/ContactUs" Component={ContactUs} />
+          <Route path="/About" Component={About} />
+
         </Routes>
       </Router>
     </div>
